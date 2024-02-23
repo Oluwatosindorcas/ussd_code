@@ -504,17 +504,504 @@ if ussd_code == "*301#":
                     print("invalid")
 
             elif gaming_services == "8":
-                pass
+                wazoo_play = input("WAZOO PLAY: Subscribe to PLAY:\n"
+                                   "1. Daily Auto @N20/day\n"
+                                   "2. Weekly Auto @N100/wk\n"
+                                   "3. Daily Onetim @N20/day\n"
+                                   "4. Weekly Onetime @N100/wk\n"
+                                   "5. Unsubscribe\n"
+                                   "0. Exit"
+
+                                   )
+                if wazoo_play == "1":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif wazoo_play == "2":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif wazoo_play == "3":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif wazoo_play == "4":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif wazoo_play == "5":
+                    unsubscribe_wazooplay = input("To unsubscibe from Wazoplay:\n"
+                                                  "1. Daily Auto @N20/day\n"
+                                                  "2. Weekly Auto @N100/wk\n"
+                                                  "3. Daily Onetim @N20/day\n"
+                                                  "4. Weekly Onetime @N100/wk\n"
+                                                  "99. Back\n"
+                                                  "0. Exit"
+                                                  )
+
+                    if unsubscribe_wazooplay == "1":
+                        print("Dear Customer, your subscription of product WAZOPLAY  DAILY AUTO does not exist.")
+                    elif unsubscribe_wazooplay == "2":
+                        print("Dear Customer, your subscription of product WAZOPLAY WEEKLY AUTO does not exist.")
+                    elif unsubscribe_wazooplay == "3":
+                        print("Dear Customer, your subscription of product WAZOPLAY DAILY ONETIME does not exist.")
+                    elif unsubscribe_wazooplay == "4":
+                        print("Dear Customer, your subscription of product WAZOPLAY WEEKLY ONETIME does not exist.")
+                    elif unsubscribe_wazooplay == "99":
+                        print("Failed to subscribe to the product. Try again later.")
+                    elif unsubscribe_wazooplay == "0":
+                        print("Exiting, thank you.")
+                    else:
+                        print("invalid")
+                elif wazoo_play == "0":
+                    print("Exiting, thank you.")
+                else:
+                    print("invalid")
             elif gaming_services == "99":
                 pass
             elif gaming_services == "0":
-                pass
+                print("Exiting, thank you.")
             else:
                 print("Invalid MMI code")
         elif vas == "2":
-            pass
+            educational_service = input("Please Press\n"
+                                        "1. Language Learning- Busuu\n"
+                                        "2. Edu Video\n"
+                                        "99. Back\n"
+                                        "0. Exit\n"
+                                        )
+            if educational_service == "1":
+                busuu_language = input("Welcome to Buss Language Learning Service\n"
+                                       "Choose Pack"
+                                       "1. Daily Auto Pack @N20\n"
+                                       "2. Weekly Auto Pack@N100\n"
+                                       "3. Daily Onetime Pack @N20\n"
+                                       "4. Weekly Onetime Pack @N100\n"
+                                       "99. Back\n"
+                                       "0. Exit"
+                                       )
+                if busuu_language == "1":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif busuu_language == "2":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif busuu_language == "3":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif busuu_language == "4":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif busuu_language == "99":
+                    pass
+                else:
+                    print("invalid")
+            elif educational_service == "2":
+                edu_video = input("Welcome to Edu. Video Service. Press\n" +
+                                  "1. Daily Auto @N20\n" +
+                                  "2. Weekly Auto @N50\n" +
+                                  "3. Monthly Auto @N200\n" +
+                                  "4. Daily one time @N20\n" +
+                                  "5. Weekly One time @50\n" +
+                                  "6. Monthly Onetime @N200\n" +
+                                  "0. Exit\n")
+                if edu_video == "1":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif edu_video == "2":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif edu_video == "3":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif edu_video == "4":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif edu_video == "5":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif edu_video == "6":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif edu_video == "0":
+                    print("Exiting, thank you")
+                else:
+                    print("invalid")
+            elif educational_service == "99":
+                pass
+            elif educational_service == "0":
+                print("Exiting, thank you")
+            else:
+                print("invalid")
         elif vas == "3":
-            pass
+            lottery = input("Press\n"
+                            "1. Lucky Number\n"
+                            "2. Green Lotto\n"
+                            "3. Perfect 10\n"
+                            "4. Jolly Suite\n"
+                            "5. Africa Winner\n"
+                            "6. Zoom Lottery\n"
+                            "99. Back\n"
+                            "0. Exit\n"
+                            )
+            if lottery == "1":
+                lucky_numbers = input("Welcome to Lucky Number service\n"
+                                      "Please choose\n"
+                                      "1. Lucky Number Economy: N50\n"
+                                      "2. Lucky Number Max: N200\n"
+                                      "3. Lucky Number Premium: N500\n"
+                                      "4. Unsubscribe\n"
+                                      "5. Draw Result\n"
+                                      "0. Exit\n"
+                                      )
+                if lucky_numbers == "1":
+                    lucky_numbers_eco = input("Thanks for choosing Lucky Number Economy pack @50 daily. Please "
+                                              "confirm.\n"
+                                              "1. Auto-renewal\n"
+                                              "2. One-time or one off\n"
+                                              "99. Back\n"
+                                              "0. Exit"
+                                              )
+                    if lucky_numbers_eco == "1":
+                        print("Failed to subscribe to the product. Try again later.")
+                    elif lucky_numbers_eco == "2":
+                        print("Failed to subscribe to the product. Try again later.")
+                    elif lucky_numbers_eco == "99":
+                        pass
+                    elif lucky_numbers_eco == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("invalid")
+                elif lucky_numbers == "2":
+                    lucky_numbers_max = input("Thanks for choosing Lucky Number Max pack @200 daily. Please "
+                                              "confirm.\n"
+                                              "1. Auto-renewal\n"
+                                              "2. One-time or one off\n"
+                                              "99. Back\n"
+                                              "0. Exit"
+                                              )
+                    if lucky_numbers_max == "1":
+                        print("Failed to subscribe to the product. Try again later.")
+                    elif lucky_numbers_max == "2":
+                        print("Failed to subscribe to the product. Try again later.")
+                    elif lucky_numbers_max == "99":
+                        pass
+                    elif lucky_numbers_max == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("invalid")
+                elif lucky_numbers == "3":
+                    lucky_numbers_premium = input("Thanks for choosing Lucky Number Premium pack @500 daily. Please "
+                                                  "confirm.\n"
+                                                  "1. Auto-renewal\n"
+                                                  "2. One-time or one off\n"
+                                                  "99. Back\n"
+                                                  "0. Exit"
+                                                  )
+                    if lucky_numbers_premium == "1":
+                        print("Failed to subscribe to the product. Try again later.")
+                    elif lucky_numbers_premium == "2":
+                        print("Failed to subscribe to the product. Try again later.")
+                    elif lucky_numbers_premium == "99":
+                        pass
+                    elif lucky_numbers_premium == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("invalid")
+                elif lucky_numbers == "4":
+                    unsubscribe_lucky_numbers = input("Select Package:\n"
+
+                                                      "1. Lucky Number Economy: \n"
+                                                      "2. Lucky Number Max: \n"
+                                                      "3. Lucky Number Premium: \n"
+                                                      "99. Back\n"
+                                                      "0. Exit\n"
+                                                      )
+                    if unsubscribe_lucky_numbers == "1":
+                        unsubscribe_eco = input("1. Lucky Number Economy Auto\n"
+                                                "2. Lucky Number Economy one-time\n"
+                                                "99. Back"
+                                                "0. Exit"
+                                                )
+                        if unsubscribe_eco == "1":
+                            print("Failed to subscribe to the product. Try again later.")
+                        elif unsubscribe_eco == "2":
+                            print("Failed to subscribe to the product. Try again later.")
+                        elif unsubscribe_eco == "99":
+                            pass
+                        elif unsubscribe_eco == "0":
+                            print("Exiting, thank you")
+                        else:
+                            print("invalid selection")
+                    elif unsubscribe_lucky_numbers == "2":
+                        unsubscribe_max = input("1. Lucky Number Max Auto\n"
+                                                "2. Lucky Number Max one-time\n"
+                                                "99. Back\n"
+                                                "0.Exit"
+                                                )
+                        if unsubscribe_max == "1":
+                            print("Failed to subscribe to the product. Try again later.")
+                        elif unsubscribe_max == "2":
+                            print("Failed to subscribe to the product. Try again later.")
+                        elif unsubscribe_max == "99":
+                            pass
+                        elif unsubscribe_max == "0":
+                            print("Exiting Thank you")
+                        else:
+                            print("invalid selection")
+                    elif unsubscribe_lucky_numbers == "3":
+                        unsubscribe_premium = input("1. Lucky Number Premium Auto\n"
+                                                    "2. Lucky Number Premium one-time\n"
+                                                    "99. Back\n"
+                                                    "0.Exit"
+                                                    )
+                        if unsubscribe_premium == "1":
+                            print("Failed to subscribe to the product. Try again later.")
+                        elif unsubscribe_premium == "2":
+                            print("Failed to subscribe to the product. Try again later.")
+                        elif unsubscribe_premium == "99":
+                            pass
+                        elif unsubscribe_premium == "0":
+                            print("Exiting Thank you")
+                        else:
+                            print("invalid selection")
+                    elif unsubscribe_lucky_numbers == "99":
+                        pass
+                    elif unsubscribe_lucky_numbers == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("Invalid")
+                elif lucky_numbers == "5":
+                    print("This service is not available. Please try again later.")
+                elif lucky_numbers == "0":
+                    print("Exiting, thank you")
+                else:
+                    print("Invalid")
+            elif lottery == "2":
+                green_lotto = input("Green Lotto. I accept T&C by Playing/Subscribing\n"
+                                    "1. Economy N50\n"
+                                    "2. Premium @N100\n"
+                                    "3. Daily Draw Menu\n"
+                                    "4. Instant Draw Menu\n"
+                                    "5. Play5/90\n"
+                                    "6. Scratch Game\n"
+                                    "7. Winning\n"
+                                    "8. Add Bank\n"
+                                    "0. Exit\n"
+                                    "        \n"
+                                    "88. Next\n"
+
+                                    )
+                if green_lotto == "1":
+                    green_lotto_economy = input("For Economy pack, Please choose\n"
+                                                "1. Auto Renewal Daily @50\n"
+                                                "2. One-Time @50\n"
+                                                "99. Back\n"
+                                                "0. Exit\n"
+                                                )
+                    if green_lotto_economy == "1":
+                        print("This service is not available. Please try again later.")
+                    elif green_lotto_economy == "2":
+                        print("This service is not available. Please try again later.")
+                    elif green_lotto_economy == "99":
+                        pass
+                    elif green_lotto_economy == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("invalid")
+
+                elif green_lotto == "2":
+                    green_lotto_premium = input("For Premium pack, Please choose\n"
+                                                "1. Auto Renewal @100\n"
+                                                "2. One-Time @100\n"
+                                                "99. Back\n"
+                                                "0. Exit\n"
+                                                )
+                    if green_lotto_premium == "1":
+                        print("This service is not available. Please try again later.")
+                    elif green_lotto_premium == "2":
+                        print("This service is not available. Please try again later.")
+                    elif green_lotto_premium == "99":
+                        pass
+                    elif green_lotto_premium == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("invalid")
+                elif green_lotto == "3":
+                    green_lotto_draw = input("Please Confirm\n"
+                                             "1. N50\n"
+                                             "2. N100\n")
+                    if green_lotto_draw == "1":
+                        print("Error in deducting Airtime.Try again")
+                    elif green_lotto_draw == "1":
+                        print("Error in deducting Airtime.Try again")
+                    else:
+                        print("invalid")
+                elif green_lotto == "4":
+                    green_lotto_instant = input("Please Confirm\n"
+                                                "1. N50\n"
+                                                "         "
+                                                "2. N100\n"
+                                                )
+                    if green_lotto_instant == "1":
+                        print("Error in deducting Airtime.Try again")
+                    elif green_lotto_instant == "1":
+                        print("Error in deducting Airtime.Try again")
+                    else:
+                        print("invalid")
+                elif green_lotto == "5":
+                    green_lotto_play = input("Today's Game\n"
+                                             "1. DESTINY 5/99 06:30PM\n"
+                                             "2. CHAMPION 5/90 09:00PM\n"
+                                             "3. WIN BIG 5/90 10:00PM\n"
+                                             "                         "
+                                             "0. Exit"
+                                             )
+                    if green_lotto_play == "1":
+                        green_lotto_destiny = input("An error occurred. Please try again later.\n"
+                                                    "Error Code: (SL - 17086419522804)\n"
+                                                    "0. Exit"
+                                                    )
+                        if green_lotto_destiny == "0":
+                            print("Exiting")
+                        else:
+                            print("Exiting")
+                    elif green_lotto_play == "2":
+                        green_lotto_champion = input("An error occurred. Please try again later.\n"
+                                                     "Error Code: (SL - 17086421367654)\n"
+                                                     "0. Exit"
+                                                     )
+                        if green_lotto_champion == "0":
+                            print("Exiting")
+                        else:
+                            print("Exiting")
+                    elif green_lotto_play == "3":
+                        green_lotto_win = input("An error occurred. Please try again later.\n"
+                                                "Error Code: (SL - 17086421843889)\n"
+                                                "0. Exit"
+                                                )
+                        if green_lotto_win == "0":
+                            print("Exiting")
+                        else:
+                            print("Exiting")
+
+                    else:
+                        pass
+                elif green_lotto == "6":
+                    green_lotto_scratch = input("Select stake amount\n"
+                                                "1. 50\n"
+                                                "2. 100\n"
+                                                )
+                    if green_lotto_scratch == "1":
+                        lotto_deduction_source50 = input("Select Deduction Source\n"
+                                                         "1. Airtime\n"
+                                                         "2. Wallet\n")
+                        if lotto_deduction_source50 == "1":
+                            print("Object reference not set to an instance of an object")
+                        elif lotto_deduction_source50 == "2":
+                            print("Object reference not set to an instance of an object")
+
+                        else:
+                            print("exiting")
+                    elif green_lotto_scratch == "2":
+                        lotto_deduction_source100 = input("Select Deduction Source\n"
+                                                          "1. Airtime\n"
+                                                          "2. Wallet\n")
+                        if lotto_deduction_source100 == "1":
+                            print("Object reference not set to an instance of an object")
+                        elif lotto_deduction_source100 == "2":
+                            print("Object reference not set to an instance of an object")
+
+                        else:
+                            print("exiting")
+                    else:
+                        print("Exiting")
+                elif green_lotto == "7":
+                    print("There is no winning in your account")
+                    # comeback here
+                elif green_lotto == "8":
+                    pass
+                # comeback here
+                elif green_lotto == "0":
+                    print("Exiting, thank you")
+                elif green_lotto == "88":
+                    green_lotto_next = input("9. History\n"
+                                             "10. Check Wallet Balance\n"
+                                             "11. Result\n"
+                                             "12. Unsubscribe\n"
+                                             "99. Back\n"
+                                             "0. Exit\n"
+                                             )
+                    if green_lotto_next == "9":
+                        print("You have no transaction for today")
+                    elif green_lotto_next == "10":
+                        print("Wallet Balance\n"
+                              "1. Cashin Wallet Balance: NGN 0\n"
+                              "2. Cashout Wallet balance balance: NGN 0\n"
+                              "3. Promo Balance: NGN 0\n"
+                              )
+                    elif green_lotto_next == "11":
+                        green_lotto_result = input("An error occurred. Please try again later.\n"
+                                                   "Error Code: (SL - 17086443072160)\n"
+                                                   "0. Exit"
+                                                   )
+                        if green_lotto_result == "0":
+                            print("Exiting")
+                        else:
+                            print("Exiting")
+                    elif green_lotto_next == "12":
+                        green_lotto_unsubscribe = input("Please Select\n"
+                                                        "1. Economy Pack\n"
+                                                        "2. Premium Pack\n"
+                                                        "99. Back\n"
+                                                        "0.Exit\n"
+                                                        )
+                        if green_lotto_unsubscribe == "1":
+                            lotto_unsubscribe_economy = input("For Economy pack, Please choose\n"
+                                                              "1. Auto Renewal Daily\n"
+                                                              "2. One-Time\n"
+                                                              "99. Back\n"
+                                                              "0. Exit"
+                                                              )
+                            if lotto_unsubscribe_economy == "1":
+                                print("This service is not available. Please try again later.")
+                            elif lotto_unsubscribe_economy == "2":
+                                print("This service is not available. Please try again later.")
+                            elif lotto_unsubscribe_economy == "99":
+                                pass
+                            elif lotto_unsubscribe_economy == "0":
+                                print("Exiting")
+                            else:
+                                print("invalid")
+
+                        elif green_lotto_unsubscribe == "2":
+                            lotto_unsubscribe_premium = input("For Premium pack, Please choose\n"
+                                                              "1. Auto Renewal Daily\n"
+                                                              "2. One-Time\n"
+                                                              "99. Back\n"
+                                                              "0. Exit"
+                                                              )
+                            if lotto_unsubscribe_premium == "1":
+                                print("This service is not available. Please try again later.")
+                            elif lotto_unsubscribe_premium == "2":
+                                print("This service is not available. Please try again later.")
+                            elif lotto_unsubscribe_premium == "99":
+                                pass
+                            elif lotto_unsubscribe_premium == "0":
+                                print("Exiting")
+                            else:
+                                print("invalid")
+                        elif green_lotto_unsubscribe == "99":
+                            pass
+                        elif green_lotto_unsubscribe == "0":
+                            print("Exiting, thank you")
+                        else:
+                            print("invalid")
+                    elif green_lotto_next == "99":
+                        pass
+                    elif green_lotto_next == "0":
+                        print("exiting, thank you")
+                    else:
+                        print("invalid")
+
+                else:
+                    print("Invalid")
+            elif lottery == "3":
+                pass
+            elif lottery == "4":
+                pass
+            elif lottery == "5":
+                pass
+            elif lottery == "6":
+                pass
+            elif lottery == "99":
+                pass
+            elif lottery == "0":
+                pass
+            else:
+                pass
         elif vas == "4":
             pass
         elif vas == "5":
