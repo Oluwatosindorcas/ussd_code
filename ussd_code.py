@@ -93,6 +93,172 @@ if ussd_code == "*301#":
                                        "99. Back\n" +
                                        "0. Exit\n"
                                        )
+            if voice_data_roaming == "1":
+                tariff_plan = input("1. My Package\n"
+                                    "2. My Number\n"
+                                    "3. Friends and family Number\n"
+                                    "4. Easy Share\n"
+                                    "99. Back\n"
+                                    "0. Exit")
+                if tariff_plan == "1":
+                    package = input("1. To Know Your Package Dial #100#\n"
+                                    "2. To Migrate to other profile Dial *100#\n"
+                                    "99. Back\n"
+                                    "0. Exit\n")
+                    if package == "1":
+                        package = input("1. To Know Your Package Dial #100#\n"
+                                        "2. To Migrate to other profile Dial *100#\n"
+                                        "99. Back\n"
+                                        "0. Exit\n")
+                    elif package == "2":
+                        package = input("1. To Know Your Package Dial #100#\n"
+                                        "2. To Migrate to other profile Dial *100#\n"
+                                        "99. Back\n"
+                                        "0. Exit\n")
+                    elif package == "99":
+                        pass
+                    elif package == "0":
+                        print("Exiting, Thank you")
+                    else:
+                        print("invalid")
+                elif tariff_plan == "2":
+                    my_number = input("Dear customer, to know you Glo Number, please dial 777*#\n"
+                                      "99. Back\n"
+                                      "0.Exit\n")
+                    if my_number == "99":
+                        pass
+                    elif my_number == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("invalid")
+                elif tariff_plan == "3":
+                    family_friend = input("1. To manage friends and family, Dial *606*1#\n"
+                                          "2. View friends and family list, Dial *170*50#\n"
+                                          "99. Back\n"
+                                          "0. Exit\n")
+                    if family_friend == "1":
+                        family_friend1 = input("1. To manage friends and family, Dial *606*1#\n"
+                                               "2. View friends and family list, Dial *170*50#\n"
+                                               "99. Back\n"
+                                               "0. Exit\n")
+                    elif family_friend == "2":
+                        family_friend1 = input("1. To manage friends and family, Dial *606*1#\n"
+                                               "2. View friends and family list, Dial *170*50#\n"
+                                               "99. Back\n"
+                                               "0. Exit\n")
+                    elif family_friend == "99":
+                        pass
+                    elif family_friend == "0":
+                        print("Exiting, Thank you")
+                    else:
+                        print("invalid")
+
+                elif tariff_plan == "4":
+                    easy_share = input("Dear Customer,for Me2U please dial *131*nPhone Number * Amount * Pin #\n"
+                                       "99. Back\n"
+                                       "0. Exit\n")
+                    if easy_share == "99":
+                        pass
+                    elif easy_share == "0":
+                        print("Exting, Thank you"
+                              )
+                    else:
+                        print("invalid")
+
+                elif tariff_plan == "99":
+                    pass
+                elif tariff_plan == "0":
+                    print("Exiting, thank you")
+                else:
+                    print("invalid")
+            elif voice_data_roaming == "2":
+                international_calls = input("1. N100 = 4 min 3 Days\n"
+                                            "2. N200 = 8 min 7 Days\n"
+                                            "3. N500 = 22 min 14 Days\n"
+                                            "4. N1000 = 44 min 30 Days\n"
+                                            "5. List of 10 countries\n"
+                                            "6. Check IDD Pack Balance\n"
+                                            "99. Back\n"
+                                            "0. Exit\n")
+                if international_calls == "1":
+                    int_hundred = input("Please E-top up your line with N99 to enjoy benefits under this plan.\n"
+                                        "For paper recharge of N100 Dial *605*\n"
+                                        "99. Back\n"
+                                        "0. Exit\n")
+                    if int_hundred == "99":
+                        pass
+                    elif int_hundred == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("Exiting. Thank you")
+                elif international_calls == "2":
+                    int_thundred = input("Please E-top up your line with N199 to enjoy benefits under this plan.\n"
+                                         "For paper recharge of N200 Dial *605*\n"
+                                         "99. Back\n"
+                                         "0. Exit\n")
+                    if int_thundred == "99":
+                        pass
+                    elif int_thundred == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("Exiting. Thank you")
+                elif international_calls == "3":
+                    int_fhundred = input("Please E-top up your line with N499 to enjoy benefits under this plan.\n"
+                                         "For paper recharge of N500 Dial *605*\n"
+                                         "99. Back\n"
+                                         "0. Exit\n")
+                    if int_fhundred == "99":
+                        pass
+                    elif int_fhundred == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("Exiting. Thank you")
+                elif international_calls == "4":
+                    int_thousand = input("Please E-top up your line with N999 to enjoy benefits under this plan.\n"
+                                        "For paper recharge of N1000 Dial *605*\n"
+                                        "99. Back\n"
+                                        "0. Exit\n")
+                    if int_thousand == "99":
+                        pass
+                    elif int_thousand == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("Exiting. Thank you")
+                elif international_calls == "5":
+                    country_list = input("Canada,India, Malaysia, Mongolia, Norway, Puerto Rico, Romania\n"
+                                         "99. Back\n"
+                                         "0. Exit\n")
+                    if country_list == "99":
+                        pass
+                    elif country_list == "0":
+                        print("Exiting, thank you")
+                    else:
+                        print("invalid")
+                elif international_calls == "6":
+                    print(" IDD-16 countries pack balance in seconds:\n"
+                          "IDD-100:0; IDD-200:0; IDD-500:0; IDD-1000:0 ")
+                elif international_calls == "99":
+                    pass
+                elif international_calls == "0":
+                    print("Exiting, thank you")
+                else:
+                    print("invalid")
+
+            elif voice_data_roaming == "3":
+                data_roaming = input("1. N2000 = 300MB 3 Days\n"
+                                     "2. N3500 = 600MB 7 Days\n"
+                                     "3. N6500 = 1.25GB 15 Days\n"
+                                     "4. N15000 = 3GB 30 Days\n"
+                                     "5. N30000 = 6GB 180 Days\n"
+                                     "6. List of countries & partners\n"
+                                     "99. Back\n"
+                                     "0. Exit\n")
+            elif voice_data_roaming == "99":
+                pass
+            elif voice_data_roaming == "0":
+                print("Exiting, thank you")
+            else:
+                print("invalid")
         elif data_plans == "6":
             glo_rewards = input("Recharge and win assured cashback, exciting prizes and chance to win up to N100M "
                                 "every week:\n" +
@@ -101,6 +267,17 @@ if ussd_code == "*301#":
                                 "99. Back\n" +
                                 "0. Exit \n"
                                 )
+            if glo_rewards == "1":
+                print("Dear Customer, You have successfully opted-in for Promo. Keep Recharging, win assured cashback, "
+                      "exciting prizes up to N100MnEvery week.")
+            elif glo_rewards == "2":
+                print("Dear Customer, Thank you for your patronage. You can opt-in again by  dialing *301*8# anytime "
+                      "during promo period and start inning gain.")
+            elif glo_rewards == "99":
+                pass
+            elif glo_rewards == "0":
+                print("Exiting, thank you.")
+
         else:
             print("Exiting, thank you")
 
@@ -1003,17 +1180,149 @@ if ussd_code == "*301#":
             else:
                 pass
         elif vas == "4":
-            pass
+            entertainment = input("1. Glo Magazine\n"
+                                  "2. TAPESTRY\n"
+                                  "99. Back\n"
+                                  "0. Exit\n")
+            if entertainment == "1":
+                magazine_services = input("Welcome to Glo Magazine Service. Press\n" +
+                                          "1. Daily Auto @N30\n" +
+                                          "2. Weekly Auto @N100\n" +
+                                          "3. Monthly Auto @N200\n" +
+                                          "4. Daily one time @N30\n" +
+                                          "5. Weekly One time @100\n" +
+                                          "6. Monthly Onetime @N200\n" +
+                                          "99. Back\n"
+                                          "0. Exit\n")
+                if magazine_services == "1":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif magazine_services == "2":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif magazine_services == "3":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif magazine_services == "4":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif magazine_services == "5":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif magazine_services == "5":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif magazine_services == "6":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif magazine_services == "99":
+                    pass
+                elif magazine_services == "0":
+                    print("Exiting Thank you")
+                else:
+                    pass
+            elif entertainment == "2":
+                tapestry = input("TAPESTRY Comedy: Subscribe to the Service Select Category:" +
+                                 "1. Daily Auto @N50\n" +
+                                 "2. Weekly Auto @N200\n" +
+                                 "3. Daily one time @N50\n" +
+                                 "4. Weekly One time @200\n" +
+                                 "5. Unsubscribe\n" +
+                                 "99. Back\n" +
+                                 "0. Exit\n")
+                if tapestry == "1":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif tapestry == "2":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif tapestry == "3":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif tapestry == "4":
+                    print("Failed to subscribe to the product. Try again later.")
+                elif tapestry == "5":
+                    tapestry_unsubscribe = input("To Unsubscribe from the Service Select Category:\n" +
+                                                 "1. Daily Auto @N50\n" +
+                                                 "2. Weekly Auto @N200\n" +
+                                                 "3. Daily one time @N50\n" +
+                                                 "4. Weekly One time @200\n" +
+                                                 "99. Back\n" +
+                                                 "0. Exit\n")
+                    if tapestry_unsubscribe == "1":
+                        print("Failed to unsubscribe to the product. Try again later.")
+                    elif tapestry_unsubscribe == "2":
+                        print("Failed to unsubscribe to the product. Try again later.")
+                    elif tapestry_unsubscribe == "3":
+                        print("Failed to unsubscribe to the product. Try again later.")
+                    elif tapestry_unsubscribe == "4":
+                        print("Failed to unsubscribe to the product. Try again later.")
+                    elif tapestry_unsubscribe == "99":
+                        pass
+                    elif tapestry_unsubscribe == "0":
+                        print("Exiting,thank you")
+                    else:
+                        print("invalid selection")
+                elif tapestry == "99":
+                    pass
+                elif tapestry == "0":
+                    print("exiting thank you")
+
+                else:
+                    print("invalid")
+            elif entertainment == "99":
+                pass
+            elif entertainment == "0":
+                print("exiting,thank you")
+            else:
+                print("invalid")
         elif vas == "5":
-            pass
+            sports_service = input("1. Sports Video Portal\n"
+                                   "2. Sports Portal\n"
+                                   "99. Back\n"
+                                   "0. Exit\n")
+            if sports_service == "1":
+                sport_video = input("Welcome to Sports Video Portal Service.Press\n" +
+                                    "1. Daily Auto @N30\n" +
+                                    "2. Weekly Auto @N100\n" +
+                                    "3. Daily one time @N30\n" +
+                                    "4. Weekly One time @100\n" +
+                                    "99. Back\n" +
+                                    "0. Exit\n")
+                if sport_video == "1":
+                    pass
+                elif sport_video == "2":
+                    pass
+                elif sport_video == "3":
+                    pass
+                elif sport_video == "4":
+                    pass
+                elif sport_video == "99":
+                    pass
+                elif sport_video == "0":
+                    pass
+                else:
+                    print("Invalid")
+            elif sports_service == "2":
+                pass
+            elif sports_service == "99":
+                pass
+            elif sports_service == "0":
+                pass
+            else:
+                print("invalid")
         elif vas == "6":
-            pass
+            print("This service is not available. Please try again later.")
         elif vas == "7":
-            pass
+            bmc = input("Dear ")
         elif vas == "8":
-            pass
+            glo_cloud = input("Glo Cloud Service. 1st Month free. Please visit https://glocloud.gloworld.com to "
+                              "subscribe\n"
+                              "99. Back\n"
+                              "0. Exit\n")
         elif vas == "9":
-            pass
+            unsubscribe = input("To Unsubscribe,press\n"
+                                "1. Gaming Service\n" +
+                                "2. Educational Service\n" +
+                                "3. Lottery Service\n" +
+                                "4. Entertainment Service\n" +
+                                "5. Sport Service\n" +
+                                "6. Caller Tunes Service\n" +
+                                "7. BMC Service\n" +
+                                "8. Glo Cloud service\n" +
+                                "99. Back\n" +
+                                "0. Exit\n"
+                                )
         elif vas == "0":
             pass
         else:
@@ -1027,7 +1336,7 @@ if ussd_code == "*301#":
                             "0. Exit \n"
                             )
         if cash_tokens == "1":
-            print("Dear Customer, You have successfully opted-in for Promo. Kepp Recharging, win assured cashback, "
+            print("Dear Customer, You have successfully opted-in for Promo. Keep Recharging, win assured cashback, "
                   "exciting prizes up to N100MnEvery week.")
         elif cash_tokens == "2":
             print("Dear Customer, Thank you for your patronage. You can opt-in again by  dialing *301*8# anytime "
