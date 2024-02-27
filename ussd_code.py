@@ -215,9 +215,9 @@ if ussd_code == "*301#":
                         print("Exiting. Thank you")
                 elif international_calls == "4":
                     int_thousand = input("Please E-top up your line with N999 to enjoy benefits under this plan.\n"
-                                        "For paper recharge of N1000 Dial *605*\n"
-                                        "99. Back\n"
-                                        "0. Exit\n")
+                                         "For paper recharge of N1000 Dial *605*\n"
+                                         "99. Back\n"
+                                         "0. Exit\n")
                     if int_thousand == "99":
                         pass
                     elif int_thousand == "0":
@@ -253,6 +253,109 @@ if ussd_code == "*301#":
                                      "6. List of countries & partners\n"
                                      "99. Back\n"
                                      "0. Exit\n")
+                airtime_value = input("Kindly input your airtime value:N ")
+                airtime_value = float(airtime_value)
+                if airtime_value >= 2000 and data_roaming == "1":
+                    print("Dear Subscriber, Request under process for international Data Roaming pack.")
+                elif airtime_value >= 3500 and data_roaming == "2":
+                    print("Dear Subscriber, Request under process for international Data Roaming pack.")
+                elif airtime_value >= 6500 and data_roaming == "3":
+                    print("Dear Subscriber, Request under process for international Data Roaming pack.")
+                elif airtime_value >= 15000 and data_roaming == "4":
+                    print("Dear Subscriber, Request under process for international Data Roaming pack.")
+                elif airtime_value >= 30000 and data_roaming == "5":
+                    print("Dear Subscriber, Request under process for international Data Roaming pack.")
+                elif data_roaming == "6":
+                    countries_partner = input(
+                        "Andorra-Orange. Belgium-Mobistar. Benin-Moov. Cameroon-Orange. Canada-Rogers. Cote D\n"
+                        "Ivoire-Orange. Croatia-T-Mob. Cyprus-Epic. Czech Republic-T-Mob."
+                        "1.More\n"
+                        "99. Back\n"
+                        "0. Exit\n")
+                    if countries_partner == "1":
+                        countries_partner2 = input("Estonia-Tele2. France-Orange Germany-T-Mob. Ghana-Airtel Tigo. "
+                                                   "Greece-Cosmote. Hong Kong-PCCW. Iceland-Simmin. Ireland-Meteor. "
+                                                   "Ireland-H3G."
+                                                   "1. More\n"
+                                                   "99. Back\n"
+                                                   "0. Exit\n")
+                        if countries_partner2 == "1":
+                            countries_partner3 = input(
+                                "Kenya-Safaricom. Iltaly-Telecom ltalia.Liechtenstein-Salt. Luxembourg-Post.\n"
+                                "Luxembourg-Orange. Malta-SALZ\n"
+                                "Monaco-Orange. Morocco-Orange.\n"
+                                "Niger-Orange\n"
+                                "1. More\n"
+                                "99. Back\n"
+                                "0. Exit\n")
+                            if countries_partner3 == "1":
+                                countries_partner4 = input("Netherlands-KPN. Poland-Polkomtel.\n"
+                                                           "Qatar-Voda. San Marino-Telecom Italia.\n"
+                                                           "Saudi Arabia-Zain. Senegal-Orange\n"
+                                                           "South Africa-Cell C. South Africa-Telkom\n"
+                                                           "1. More\n"
+                                                           "99. Back\n"
+                                                           "0. Exit\n")
+                                if countries_partner4 == "1":
+                                    countries_partner5 = input("Sri Lanka-Hutchison. Sri Lanka-Etisalat.\n"
+                                                               "Sweden-Tele2. Sweden-Hi3G Access AB.\n"
+                                                               "Switzerland-Salt. Switzerland-Swisscom\n"
+                                                               "Turkey-Turk Telecom UAE-Etisalat\n"
+                                                               "1. More\n"
+                                                               "99. Back\n"
+                                                               "0. Exit\n")
+                                    if countries_partner5 == "1":
+                                        countries_partner6 = input("United Kingdom-Hutchison H3G USA-AT\n"
+                                                                   "& T USA-T-Mobile Vatican-Telecom Italia\n"
+                                                                   "99. Back\n"
+                                                                   "0. Exit\n")
+                                        if countries_partner6 == "99":
+                                            pass
+                                        elif countries_partner6 == "0":
+                                            print("Exiting")
+                                        else:
+                                            print("invalid")
+                                    elif countries_partner5 == "99":
+                                        pass
+                                    elif countries_partner5 == "0":
+                                        print("Exiting, Thank you")
+                                    else:
+                                        print("invalid")
+                                elif countries_partner4 == "99":
+                                    pass
+                                elif countries_partner4 == "0":
+                                    print("Exit")
+
+                                else:
+                                    print("invalid")
+                            elif countries_partner3 == "99":
+                                pass
+                            elif countries_partner3 == "0":
+                                print("Exiting, thank you")
+                            else:
+                                print("invalid")
+
+                        elif countries_partner2 == "99":
+                            pass
+                        elif countries_partner2 == "0":
+                            print("Exit")
+                        else:
+                            print("invalid")
+
+                    elif countries_partner == "99":
+                        pass
+                    elif countries_partner == "0":
+                        print("Exit")
+                    else:
+                        print("invalid")
+                elif data_roaming == "99":
+                    pass
+                elif data_roaming == "0":
+                    print("Exiting, thank you")
+
+                else:
+                    print("Dear Subscriber, you do not have sufficient balance to purchase this data roaming pack. Pls "
+                          "recharge and try again")
             elif voice_data_roaming == "99":
                 pass
             elif voice_data_roaming == "0":
@@ -290,6 +393,249 @@ if ussd_code == "*301#":
                                 "4. Borrow Credit for Others\n" +
                                 "5. Borrow Data for Others \n"
                                 )
+        if borrow_services == "1":
+            print("Dear Customer, your request stopped unexpectely at this time. Please try again later")
+        elif borrow_services == "2":
+            borrow_credit = input("You are eligible for N1500\n"
+                                  " Reply with\n"
+                                  "1. N25\n"
+                                  "2. N50\n"
+                                  "3. N100\n"
+                                  "4. N200\n"
+                                  "5. N300\n"
+                                  "6. N400\n"
+                                  "7. N500\n"
+                                  "8. N800\n"
+                                  "9. N1000\n"
+                                  "10. N1200\n"
+                                  "11. N1500\n"
+                                  "0. Back\n"
+                                  )
+            if borrow_credit == "1":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N22 airtime at N3 service charge.")
+            elif borrow_credit == "2":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N47 airtime at N3 service charge.")
+            elif borrow_credit == "3":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N97 airtime at N3 service charge.")
+            elif borrow_credit == "4":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N197 airtime at N3 service charge.")
+            elif borrow_credit == "5":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N297 airtime at N3 service charge.")
+            elif borrow_credit == "6":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N397 airtime at N3 service charge.")
+            elif borrow_credit == "7":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N497 airtime at N3 service charge.")
+            elif borrow_credit == "8":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N797 airtime at N3 service charge.")
+            elif borrow_credit == "9":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N997 airtime at N3 service charge.")
+            elif borrow_credit == "10":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N1197 airtime at N3 service charge.")
+            elif borrow_credit == "11":
+                print("Dear Customer, please note that *303# is our New Borrow-Me Credit code. You have been credited "
+                      "with N1497 airtime at N3 service charge.")
+            elif borrow_credit == "0":
+                pass
+            else:
+                print("invalid")
+        elif borrow_services == "3":
+            borrow_data = input("Eligible N1500\n"
+                                "Reply with\n"
+                                "1. N50 = 35MB + 5MB\n"
+                                "2. N100 = 95MB + 130MB\n"
+                                "3. N200 = 200MB + 310MB\n"
+                                "4. N500 = 650MB + 1.65GB\n"
+                                "5. N1000 = 1.6GB + 2GB\n"
+                                "6. N1500 = 3GB + 4GB\n"
+                                "0. Back\n")
+            if borrow_data == "1":
+                print("Dear Customer, please note that 303# is our New Borrow-Me Credit code. You have received 35MB "
+                      "data Bundle")
+            elif borrow_data == "2":
+                print("Dear Customer, please note that 303# is our New Borrow-Me Credit code. You have received 95MB "
+                      "data Bundle")
+            elif borrow_data == "3":
+                print("Dear Customer, please note that 303# is our New Borrow-Me Credit code. You have received 200MB "
+                      "data Bundle")
+            elif borrow_data == "4":
+                print("Dear Customer, please note that 303# is our New Borrow-Me Credit code. You have received 650MB "
+                      "data Bundle")
+            elif borrow_data == "5":
+                print("Dear Customer, please note that 303# is our New Borrow-Me Credit code. You have received 1.6GB "
+                      "data Bundle")
+            elif borrow_data == "6":
+                print("Dear Customer, please note that 303# is our New Borrow-Me Credit code. You have received 3GB "
+                      "data Bundle")
+            elif borrow_data == "0":
+                pass
+            else:
+                print("invalid")
+        elif borrow_services == "4":
+            credit_others = input("You are eligible for N1500\n"
+                                  " Reply with\n"
+                                  "1. N25\n"
+                                  "2. N50\n"
+                                  "3. N100\n"
+                                  "4. N200\n"
+                                  "5. N300\n"
+                                  "6. N400\n"
+                                  "7. N500\n"
+                                  "8. N800\n"
+                                  "9. N1000\n"
+                                  "10. N1200\n"
+                                  "11. N1500\n"
+                                  "0. Back\n"
+                                  )
+            if credit_others == "1":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N22 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+
+            elif credit_others == "2":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N47 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+            elif credit_others == "3":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N97 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+            elif credit_others == "4":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N197 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+            elif credit_others == "5":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N297 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+            elif credit_others == "6":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N397 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+            elif credit_others == "7":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N497 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+            elif credit_others == "8":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N797 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+            elif credit_others == "9":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N997 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+            elif credit_others == "10":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N1197 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+            elif credit_others == "11":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent N1497 at"
+                          f"N3 service charge to {recipient_no} ")
+                else:
+                    print("Invalid Globacom user")
+            elif credit_others == "0":
+                pass
+            else:
+                print("invalid")
+        # recipient_no = input("Reply with the phone number of the recipient: ")
+        elif borrow_services == "5":
+            data_others = input("Eligible N1500\n"
+                                "Reply with\n"
+                                "1. N50 = 35MB + 5MB\n"
+                                "2. N100 = 95MB + 130MB\n"
+                                "3. N200 = 200MB + 310MB\n"
+                                "4. N500 = 650MB + 1.65GB\n"
+                                "5. N1000 = 1.6GB + 2GB\n"
+                                "6. N1500 = 3GB + 4GB\n"
+                                "0. Back\n")
+            if data_others == "1":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent 35MB data bundle to {recipient_no} ")
+            elif data_others == "2":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code.You have sent 95MB data bundle to {recipient_no}  ")
+            elif data_others == "3":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent 200MB data bundle to {recipient_no}  ")
+            elif data_others == "4":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent 650MB data bundle to {recipient_no}  ")
+            elif data_others == "5":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent 1.6GB data bundle to {recipient_no} ")
+            elif data_others == "6":
+                recipient_no = input("Reply with the phone number of the recipient: ")
+                if recipient_no.isnumeric() and len(recipient_no) == 11:
+                    print(f"Dear customer, please note *303# is our New"
+                          f"Borrow-Me Credit code. You have sent 3GB data bundle to {recipient_no}  ")
+            elif data_others == "0":
+                pass
+            else:
+                print("invalid")
+        else:
+            print("invalid")
     elif select_transaction == "3":
         recharge = input("Dear Customer, as per NCC directive, the airtime recharge code is now 311.\n" +
                          "To recharge dial *311*RechargePin#.\n" +
@@ -306,16 +652,99 @@ if ussd_code == "*301#":
                            "6. Easy Share (Credit Share)\n"
                            "0. Exit"
                            )
+        if data_share == "1":
+            tel_number = input("Please enter Glo subscriber number, you want to share data with: ")
+            if tel_number.isnumeric() and len(tel_number) == 11:
+                print(f"You have successfully shared your plan with"
+                      " {tel_number}.You can also GIFT a data"
+                      "plan. To gift a data plan, visit hsi.glo.com or"
+                      "simply dial *312#")
+            else:
+                print("Sorry, you are adding/removing an invalid Globacom user.")
+        elif data_share == "2":
+            tel_number = input("Please enter Glo subscriber number, you want to unshare data with: ")
+            if tel_number.isnumeric() and len(tel_number) == 11:
+                print(f"You have successfully removed"
+                      " {tel_number} from sharing your plan subscription")
+            else:
+                print("Sorry, you are adding/removing an invalid Globacom user.")
+        elif data_share == "3":
+            print("NOTE: The following numbers are sharing your subscription plan\n"
+                  "2348052734289\n")
+        elif data_share == "4":
+            data_setting = input("Please send the keyword <flat> to 1234\n"
+                                 "99. Back\n"
+                                 "0. Exit\n"
+                                 )
+            if data_setting == "99":
+                pass
+            elif data_setting == "0":
+                print("Exiting")
+            else:
+                print("invalid")
+        elif data_share == "5":
+            manual_config = input("Please save the APN details under"
+                                  "setting option in your handset.\n"
+                                  "APN Name: glo flat\n"
+                                  "User Name: flat\n"
+                                  "Password: flat\n"
+                                  "99. Back\n"
+                                  "0. Exit\n")
+            if manual_config == "99":
+                pass
+            elif manual_config == "0":
+                print("exiting")
+            else:
+                print("invalid")
+        elif data_share == "6":
+            easy_share = input("To share airtime with other Glo"
+                               "Number, Pls dial 131*Glo Number"
+                               "Amount*PIN#Default PIN: 00000 Note:"
+                               "Easy Share is not available For Berekete"
+                               "Customers\n"
+                               "99. Back\n"
+                               "0. Exit\n")
+            if easy_share == "99":
+                pass
+            elif easy_share == "0":
+                print("exiting")
+            else:
+                print("invalid")
+        elif data_share == "0":
+            print("Exiting, thank you")
+        else:
+            print("invalid")
     elif select_transaction == "5":
+
         check_balance = input("1. Main A/C Balance\n" +
                               "2. Bonus A/C Balance\n" +
                               "3. Post Paid A/C Balance: Dial *310#\n" +
                               "99. Back\n" +
                               "0. Exit\n"
                               )
+        airtime_value = float(input("Kindly input your airtime value:N "))
+        if check_balance == "1":
+            print(f"Main bal is {airtime_value}.")
+        elif check_balance == "2":
+            print("This service is not available. Please try again later")
+        elif check_balance == "3":
+            print("This service is not available. Please try again later")
+        elif check_balance == "99":
+            pass
+        elif check_balance == "0":
+            print("Exiting")
+
+        else:
+            print("invalid")
     elif select_transaction == "6":
-        print("Dear Customer, your plan has expired and you do not have a data plan. To buy a data plan and continue "
-              "browsing visit https://hsi.glo.com or dial *312#")
+        airtime_value = float(input("What is your data balance: "))
+        if airtime_value >= 0:
+            print(f"You are on Berekete, expires 05/03/2024 00:02, Your data balance is {airtime_value} MB and browsed "
+                  f"for 0 min")
+        else:
+            print(
+                "Dear Customer, your plan has expired, and you do not have a data plan. To buy a data plan and continue"
+                "browsing visit https://hsi.glo.com or dial *312#")
     elif select_transaction == "7":
         vas = input("Welcome. Please select.\n" +
                     "1. Gaming Service\n" +
